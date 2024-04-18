@@ -21,7 +21,7 @@ app.listen(port, () => {
 });
 
 //PAGE ROUTES
-app.get("/portfolio", async (request, response) => {
+app.get("/", async (request, response) => {
   let projects = await getProjects();
   console.log("Data:", projects);
   response.json(projects)
